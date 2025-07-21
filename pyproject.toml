@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "pa1-agents"
+version = "0.1.0"
+description = "File & Search agents"
+authors = ["you"]
+package-mode = false  # ⬅️ Add this line
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110"
+uvicorn = { extras = ["standard"], version = "^0.30" }
+redis = "^5.0"
+sentence-transformers = "2.2.2"  # ✅ CPU-friendly
+openai = "^1.30"
+pinecone-client = "^3.2"
+python-dotenv = "^1.0"
+pdfminer-six = ">=20221105"
+pytesseract = "*"
+Pillow = "*"
+PyMuPDF = "*"
+scikit-learn = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
